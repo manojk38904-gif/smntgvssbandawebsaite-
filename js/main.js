@@ -53,3 +53,10 @@
   }
   var y = document.getElementById('yr'); if (y) y.textContent = new Date().getFullYear();
 })();
+document.querySelectorAll('[data-copy]').forEach(function(b){
+  b.addEventListener('click',function(){
+    var hi=document.documentElement.lang==='hi', m=document.getElementById('cpmsg'), v=b.getAttribute('data-copy');
+    function show(ok){ if(!m) return; m.className='fmsg '+(ok?'ok':'err'); m.textContent= ok ? (hi?'कॉपी हो गया: ':'Copied: ')+v : (hi?'कॉपी नहीं हो सका, कृपया हाथ से लिखें: ':'Could not copy — please note: ')+v; }
+    try{ navigator.clipboard.writeText(v).then(function(){show(true)},function(){show(false)}); }catch(e){ show(false); }
+  });
+});
