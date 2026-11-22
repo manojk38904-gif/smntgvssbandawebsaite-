@@ -283,3 +283,8 @@ footer .base{border-top:1px solid rgba(217,178,100,.2);margin-top:40px;padding-t
   .stats{gap:10px}
 }
 @media (max-width:600px){ .medal{display:none} }
+.btn-don{padding:8px 18px;font-size:15px}
+@media (max-width:600px){.btn-don{padding:7px 12px;font-size:14px}}
+@media (hover:hover) and (pointer:fine){.upi-mobile{display:none!important}}
+@media (max-width:600px){.btn-don{display:none}}
+table.reg td.num{word-break:break-word}
