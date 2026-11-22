@@ -288,3 +288,6 @@ footer .base{border-top:1px solid rgba(217,178,100,.2);margin-top:40px;padding-t
 @media (hover:hover) and (pointer:fine){.upi-mobile{display:none!important}}
 @media (max-width:600px){.btn-don{display:none}}
 table.reg td.num{word-break:break-word}
+.partners .plogo{height:84px;width:auto;max-width:160px;object-fit:contain}
+.partners figure{min-height:160px}
+.partners .mono{font-size:15px}
