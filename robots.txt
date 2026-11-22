@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://manojk38904-gif.github.io/smntgvssbandawebsaite-/sitemap.xml
